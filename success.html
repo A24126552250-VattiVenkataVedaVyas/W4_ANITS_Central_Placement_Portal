@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ANITS Central Placement Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page success-page">
+
+  <header class="header">
+    <img src="assets/anits-logo.png" class="logo" alt="ANITS Logo">
+    <div class="college">Anil Neerukonda Institute of Technology &amp; Sciences</div>
+    <div class="portal">Campus Placement Portal</div>
+  </header>
+
+  <nav class="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Apply Job</a>
+    <a href="#">Results</a>
+    <a href="#">Upcoming Placements</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main class="content">
+    <h2>Login Successful!</h2>
+    <h3>Welcome to ANITS Central Placement Portal</h3>
+
+    <div class="info">
+      Login Time : <span id="time"></span>
+    </div>
+
+    <p><b id="greeting"></b></p>
+
+    <section class="notice">
+      <h3>📢 Important Notice</h3>
+      <ul>
+        <li>Please contact the <b>Training &amp; Placement Office</b> regularly for updates.</li>
+        <li>Stay informed about the latest <b>MAANG Companies Recruitment Process.</b></li>
+        <li>Check your registered Email ID and Placement Portal for announcements.</li>
+        <li>Attend all Pre-Placement Talks (PPTs), Aptitude Training, Mock Interviews, and Company Drives.</li>
+        <li>Keep your Resume, Academic Documents, and ID Card ready before every recruitment process.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 ANITS | Department of Training &amp; Placement
+  </footer>
+</div>
+
+<script>
+let d=new Date();
+document.getElementById("time").innerHTML=d.toLocaleString();
+let h=d.getHours();
+document.getElementById("greeting").innerHTML =
+  h<12 ? "Good Morning" : h<17 ? "Good Afternoon" : "Good Night";
+</script>
+</body>
+</html>
